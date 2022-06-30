@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>WebJDBC</display-name>
+  <welcome-file-list>
+    <welcome-file>StudentControllerServlet</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>StudentControllerServletindex.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>JDBCbasic</display-name>
+    <servlet-name>JDBCbasic</servlet-name>
+    <servlet-class>org.java.jdbc.JDBCbasic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JDBCbasic</servlet-name>
+    <url-pattern>/JDBCbasic</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StudentControllerServlet</display-name>
+    <servlet-name>StudentControllerServlet</servlet-name>
+    <servlet-class>org.java.jdbc.StudentControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentControllerServlet</servlet-name>
+    <url-pattern>/StudentControllerServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
